@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0a3d91;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0 0 0;
+    font-size: 2.4em;
+}
+
+.subtitle {
+    margin-top: 12px;
+    font-size: 1.1em;
+    font-style: italic;
+    opacity: 0.95;
+}
+
+/* Logo */
+.logo {
+    max-width: 140px;
+    margin-bottom: 10px;
+}
+
+/* Conteúdo principal */
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+section p {
+    font-size: 1.05em;
+    margin-bottom: 20px;
+}
+
+/* Títulos */
+h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #0a3d91;
+    font-size: 1.8em;
+}
+
+h3 {
+    margin-top: 0;
+    color: #222;
+}
+
+/* Episódios */
+.episode {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+footer {
+    background-color: #0a3d91;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 0.95em;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    opacity: 0.85;
+}
+
+footer .small {
+    font-size: 0.85em;
+    opacity: 0.85;
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    .logo {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 0.95em;
+    }
+}
+}
