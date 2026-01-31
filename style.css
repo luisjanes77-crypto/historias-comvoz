@@ -1,114 +1,176 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
-    margin: 0;
-    line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* Cabeçalho */
+/* =========================
+   LAYOUT BASE
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
 header {
-    background-color: #0a3d91;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+  background: #0a3d91;
 }
 
-header h1 {
-    margin: 10px 0 0 0;
-    font-size: 2.4em;
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
 }
 
-.subtitle {
-    margin-top: 12px;
-    font-size: 1.1em;
-    font-style: italic;
-    opacity: 0.95;
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-/* Logo */
 .logo {
-    max-width: 140px;
-    margin-bottom: 10px;
+  height: 48px;
+  width: auto;
 }
 
-/* Conteúdo principal */
-section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
+.nome {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-section p {
-    font-size: 1.05em;
-    margin-bottom: 20px;
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
 }
 
-/* Títulos */
-h2 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    color: #0a3d91;
-    font-size: 1.8em;
+.menu a:hover {
+  text-decoration: underline;
 }
 
-h3 {
-    margin-top: 0;
-    color: #222;
+/* =========================
+   CONTEÚDO
+========================= */
+main {
+  padding: 60px 0;
 }
 
-/* Episódios */
-.episode {
-    background-color: #ffffff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
+.intro h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  margin-bottom: 18px;
+}
+
+.assinatura {
+  font-style: italic;
+  color: #555;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #0a3d91;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background: #08306f;
+}
+
+/* =========================
+   EPISÓDIOS
+========================= */
+.episodio {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.episodio h2 {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   CONTACTOS
+========================= */
+.contactos {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contactos h2 {
+  margin: 30px 0 10px;
+}
+
+.contactos p {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
 footer {
-    background-color: #0a3d91;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 60px;
-}
-
-footer p {
-    margin: 10px 0;
-    font-size: 0.95em;
+  background: #0a3d91;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
 }
 
 footer a {
-    color: #ffffff;
-    text-decoration: underline;
+  color: #fff;
 }
 
-footer a:hover {
-    opacity: 0.85;
-}
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px 0;
+  }
 
-footer .small {
-    font-size: 0.85em;
-    opacity: 0.85;
-    margin-top: 10px;
-}
-@media (max-width: 600px) {
+  .menu a {
+    margin: 0 10px;
+  }
 
-    header {
-        padding: 30px 15px;
-    }
+  .intro h1 {
+    font-size: 2rem;
+  }
 
-    .logo {
-        max-width: 80px;
-        margin-bottom: 10px;
-    }
-
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    .subtitle {
-        font-size: 0.95em;
-    }
-}
+  .logo {
+    height: 42px;
+  }
 }
