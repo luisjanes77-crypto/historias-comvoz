@@ -6,14 +6,15 @@
   <title>Episódios — Histórias ComVoz</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="topo">
   <div class="topo-inner">
-    <a href="index.html" class="branding">
+    <div class="branding">
       <img src="Imagens/logo-historias-comvoz.jpg" alt="Histórias ComVoz" class="logo">
       <span class="nome">Histórias ComVoz</span>
-    </a>
+    </div>
 
     <nav class="menu">
       <a href="index.html">Início</a>
@@ -23,43 +24,33 @@
   </div>
 </header>
 
-<main>
-  <section class="pagina">
-    <div class="container">
-      <h1>Episódios</h1>
+<main class="conteudo">
 
-      <!-- Episódio 0 -->
-      <div class="card">
-        <h2>Episódio 0 — Apresentação</h2>
-        <p>Apresentação do projeto Histórias ComVoz.</p>
+  <section class="episodio-destaque">
+    <h1>Episódio mais recente</h1>
+    <h2>Episódio 0 — Apresentação</h2>
 
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/episode/1OJStqvKkywn91b8nc6qv9"
-          width="100%" height="352" frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy">
-        </iframe>
-      </div>
-
-      <!-- Episódio 1 -->
-      <div class="card">
-        <h2>Episódio 1 — Professor Joaquim Teixeira</h2>
-        <p>
-          Presidente da Mesa da Assembleia Geral da UATI e professor de teatro.
-          Uma conversa sobre educação, teatro e percursos de vida.
-        </p>
-        <p><em>Disponível brevemente.</em></p>
-      </div>
-
-    </div>
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/episode/1OJStqvKkywn91b8nc6qv9"
+      width="100%" height="352" frameborder="0" allowfullscreen
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
   </section>
+
+  <section class="lista-episodios">
+    <h2>Episódios anteriores</h2>
+
+    <div class="episodio">
+      <h3>Episódio 1 — Professor Joaquim Teixeira</h3>
+      <p>Presidente da Mesa da Assembleia Geral da UATI e professor de teatro.</p>
+    </div>
+
+  </section>
+
 </main>
 
 <footer class="rodape">
-  <div class="container">
-    <p>Histórias ComVoz — UATI · Universidade do Algarve para a Terceira Idade</p>
-    <p>Contacto: <a href="mailto:luis.janes77@gmail.com">luis.janes77@gmail.com</a></p>
-  </div>
+  <p>Histórias ComVoz — UATI · Universidade do Algarve para a Terceira Idade</p>
 </footer>
 
 </body>
