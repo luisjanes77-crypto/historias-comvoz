@@ -81,9 +81,10 @@ body {
 /* =========================
    INTRO / HERO
 ========================= */
-.intro-bloco {
-  text-align: center;
-  margin-bottom: 60px;
+.intro-bloco p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
 }
 
 .intro-bloco h1 {
@@ -255,8 +256,8 @@ body {
   background-color: var(--azul);
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
-  margin-top: 80px;
+  padding: 30px 20px;
+  margin-top: 60px;
 }
 
 .rodape a {
@@ -264,13 +265,21 @@ body {
   text-decoration: underline;
 }
 
+.rodape .copyright {
+  margin-top: 12px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
 /* =========================
    MOBILE
 ========================= */
 @media (max-width: 600px) {
-  .intro-bloco h1 {
-    font-size: 28px;
+  .intro-bloco p {
+    text-align: justify;
+    hyphens: auto;
   }
+}
 
   .topo-inner {
     flex-direction: column;
